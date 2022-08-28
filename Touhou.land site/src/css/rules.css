@@ -5,7 +5,6 @@ body {
     font: 14px Oswald;
     color: #ffffff;
     padding: 0;
-    margin: 0;
     min-height: 100%;
     width: 100%;
     font-weight: 400;
@@ -13,13 +12,13 @@ body {
 
 a {
     text-decoration: none;
-    text-decoration-line: none;
     text-decoration-thickness: initial;
     text-decoration-style: initial;
     text-decoration-color: initial;
     color: #7e8597;
     
 }
+
 
 
 .logo {
@@ -59,6 +58,11 @@ a {
     background: #3c3c3c;
 }
 
+.gen_rules p {
+    color: #ccc;
+    font: 14px Oswald;
+}
+
 .dropdown .dropbtn {
     font-family: Oswald;
     font-size: 17px;
@@ -69,6 +73,7 @@ a {
     background-color: inherit;
     height: 49px;
     transition: 0.5s linear;
+    padding-top: 10px;
 }
 
 .dropdown .dropbtn:hover {
@@ -80,6 +85,10 @@ a {
     float: right!important;
 }
 
+.touhou_rules {
+    margin: 5%;
+}
+
 .rules h2 {
     margin-top: 60px;
     margin-bottom: 0;
@@ -89,19 +98,35 @@ a {
     transition: 0.1s linear;
 }
 
+.rules span {
+    color: #e25041;
+    font: 14px Oswald;
+}
+
 .rules a:hover {
     color: rgb(255, 149, 0);
 }
 
-.rules a {
+.gen_rules a {
     font-size: 18px;
     color: #f2f2f2;
     cursor: pointer;
     font-weight: 400;
     text-align: center;
     background-color: rgba(255,255,255,.1);
-    margin: 10px;
-    padding: 15px;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.report {
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
 }
 
 .footer {
