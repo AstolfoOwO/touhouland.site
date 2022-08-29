@@ -178,6 +178,7 @@ a {
 
 .footer_left a:hover {
     color: rgb(255, 149, 0);
+    font-weight: 1000;
 }
 
 .footer_right a{

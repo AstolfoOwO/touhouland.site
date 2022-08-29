@@ -234,6 +234,7 @@ h1, h2, h3, h4, h5 {
 
 .footer_left a:hover {
     color: rgb(255, 149, 0);
+    font-weight: 300;
 }
 
 .footer_right a{
