@@ -198,3 +198,13 @@ a {
     bottom: 20px;
     display: none;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff9e01;
+    height: 150px;
+}

@@ -184,7 +184,33 @@ h1, h2, h3, h4, h5 {
     text-transform: uppercase;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff9e01;
+    height: 150px;
+}
+
+@media screen and (max-width: 1290px), screen and (max-height: 850px) {
+    .footer {
+        position: relative!important;
+        padding: 75px 20px 10px!important;
+    }
+} 
+
+
 .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px 10px;
+}
+
+footer {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
