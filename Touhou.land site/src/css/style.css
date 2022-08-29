@@ -1,5 +1,5 @@
 body {
-    background-color: #1f2029;
+    background: url(../img/BACKGROUND.png);
     line-height: normal;
     font: 14px Oswald;
     font-style: normal;
@@ -120,7 +120,6 @@ a {
 .main_banner div{
     width: 700px;
     height: 700px;
-    opacity: .8;
     background: url(../img/banner.png) no-repeat;
     background-size: contain;
     position: relative;

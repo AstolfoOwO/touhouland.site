@@ -11,13 +11,12 @@
     <title>Touhou.land - Дискорд сервер</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
-<script src="../js/script.js"></script>
 <body>
     <section class="menu_panel">
         <div class="navbar">
             <a class="logo" href="./index.html">TOUHOU<span>.LAND</span></a>
             <div class="dropdown login">
-                <button class="dropbtn">Авторизация</button>
+                <button onclick='oauth()' class="dropbtn">Авторизация</button>
             </div>
             <a href="https://discord.gg/touhouland">Присоединиться</a>
             <a href="./rules.html">Правила</a>
@@ -44,7 +43,7 @@
             <span>В войсе <b class="count">n</b> пользователей</span>
             <span>Проведено <b class="count">n</b> мероприятий</span>
         </div>
-
+        
     </section>
     <footer class="footer">
         <div class="footer_left">
@@ -61,4 +60,5 @@
         </div>
     </footer>
 </body>
+<script src="../js/script.js"></script>
 </html>
