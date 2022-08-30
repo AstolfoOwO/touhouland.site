@@ -49,46 +49,22 @@ a {
 }
 
 @media screen and (max-width: 930px){
-   .navbar.responsive {
-        position: relative;
-    }
-}
-
-@media screen and (max-width: 930px) {
-    .login {
-        display: none!important;
-    }
-}
-
-@media screen and (max-width: 930px) {
-    .nav_btn {
-        display: none!important;
+    .navbar a:not(:first-child), .dropdown .dropbtn {
+        display: none;
     }
 }
 
 @media screen and (max-width: 930px){
-    .navbar.responsive a {
-        float: none;
+    .navbar a.icon {
+        float: right;
         display: block;
-        text-align: left;
     }
 }
 
 @media screen and (max-width: 930px) {
-    .btn {
-        display: none;
-    }
-
-    .icon {
-        float: right;
-        display: block!important;
-    }
-} 
-
-@media screen and (max-width: 930px) {
-    .navbar .icon {
-        float: right;
+    .navbar.responsive a:not(:first-child, :last-child) {
         display: block;
+        float: left!important;
     }
 }
 
