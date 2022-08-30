@@ -31,7 +31,7 @@ a {
     text-align: center;
     user-select: none;
     margin-top: -560px;
-    color: #ff9d00;
+    color: #fb00ff;
 }
 
 .user_avatar {
@@ -147,12 +147,12 @@ a {
 }
 
 .title_main a {
-    color: #ff9d00;
+    color: #fb00ff;
 }
 
 .title_main span {
     font-size: 18px;
-    color: #ff9d00;
+    color: #fb00ff;
 }
 
 .touhou-status {
