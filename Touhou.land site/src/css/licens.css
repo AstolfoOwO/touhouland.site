@@ -19,17 +19,56 @@ a {
     
 }
 
-.logo {
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 3px solid;
-    padding: 11px 16px!important;
-    margin-right: 20px;
-    text-align: center!important;
+.user_avatar {
+    float: right;
+    width: 49px;
 }
 
-.navbar span {
-    color: #ff9d00;
+.navbar .icon {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 930px){
+    .navbar a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    /* .navbar.responsive .logo {
+        margin-right: 630px;
+    } */
+
+    .navbar.responsive a {
+        float: none!important;
+        display: block!important;
+        text-align: left;
+    }
+    
+}
+
+@media screen and (max-width: 930px) {
+    .navbar {
+        height: 100%;
+    }
 }
 
 .navbar a {
@@ -40,12 +79,11 @@ a {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    transition: 0.5s linear;
+    transition: 0.1s linear;
 }
 
 .navbar {
     overflow: hidden;
-    height: 49px;
     padding: 20px;
     margin-bottom: 20px;
     z-index: 1;
@@ -56,21 +94,15 @@ a {
     background: #3c3c3c;
 }
 
-.gen_rules p {
-    color: #ccc;
-    font: 14px Oswald;
-}
-
 .dropdown .dropbtn {
-    font-family: Oswald;
-    font-size: 17px;
+    font: 17px Oswald;
     border: 0;
     outline: 0;
     color: #f2f2f2;
     padding: 14px 16px;
     background-color: inherit;
     height: 49px;
-    transition: 0.5s linear;
+    transition: 0.1s linear;
     padding-top: 10px;
 }
 
@@ -81,6 +113,31 @@ a {
 
 .login {
     float: right!important;
+}
+
+.navbar span {
+    color: #ff9d00;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(255,255,255,.1);
+    color: #f2f2f2;
+}
+
+@media screen and (max-width: 930px){
+   .logo {
+        width: 160px!important;
+        text-align: center!important;
+    }
+}
+
+.logo {
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid;
+    padding: 11px 16px!important;
+    margin-right: 20px;
+    text-align: center!important;
 }
 
 .agreement {
