@@ -207,6 +207,12 @@ a {
     position: relative;
 }
 
+@media screen and (max-width: 1200px) {
+    .touhou_background_right {
+        display: none;
+    }
+}
+
 .main_btn a {
     user-select: none;
     text-align: center;
@@ -221,6 +227,24 @@ a {
     background-color: rgba(255, 0, 0, 0.1);
     min-width: 200px;
     transition: 0.1s linear;
+}
+
+@media screen and (max-width: 1350px){
+    .title_main {
+        margin-top: -620px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .title_main {
+        margin-top: -650px;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .title_main {
+        margin-top: -740px;
+    }
 }
 
 .title_main h1 {
