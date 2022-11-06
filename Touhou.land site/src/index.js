@@ -24,9 +24,9 @@ conn.query('SELECT * FROM information_for_site', function (error, result, fields
     app.get('/', (request, response) => {
 
         if(request.query.code) {
-            let clientID = "992755518458318998";
-            let redirect_uri = "http://127.0.0.1:5500/";
-            let clientSecret = "UvRxk7-9DXSUpmj3i8GohUZVPYMhm774";
+            let clientID = "";
+            let redirect_uri = "";
+            let clientSecret = "";
             let requestPayload = {redirect_uri, client_id: clientID, grant_type: "authorization_code", client_secret: clientSecret, code: request.query.code};
             return unirest.post("https://discordapp.com/api/oauth2/token").send(requestPayload).headers({"Content-Type": 'application/x-www-form-urlencoded', "User-Agent": 'DiscordBot'})
                 .then((data) =>{
