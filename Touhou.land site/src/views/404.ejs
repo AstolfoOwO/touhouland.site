@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/404.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <title>Touhou.land - Дискорд сервер</title>
+    <link rel="shortcut icon" href="../static/img/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+<div class="navbar" id="respNav">
+    <a class="logo" href="/">
+        TOUHOU<span>.LAND</span>
+    </a>
+    <img class="user_avatar" src="https://cdn.discordapp.com/avatars/799139246928560139/<%= user[0].avatar%>.png"  loading="lazy" decoding="async" width="49" height="49">
+    <div class="dropdown login">
+        <button class="dropbtn"><%= user[0].user_name %>#<%= discr %></button>
+        <div class="dropdown-content">
+            <a href="https://neko.su/dashboard">Веб-Панель</a>
+            <a href="https://neko.su/logout">Выход</a>
+        </div>
+    </div>
+    <a href="https://discord.gg/touhouland">Присоединиться</a>
+    <a href="rules">Правила</a>
+    <a>Магазин</a>
+    <a>Поддержка</a>
+    <a class="icon" onclick='NavBar()'>☰</a>
+</div>
+<section id="main">
+    <div class="error404">
+        <div class="error404_left">
+            <h1>Упсс!</h1>
+            <h2>Страницы не существует или она была удалена</h2>
+            <div class="error404_btn">
+                <a href="https://neko.su" class="btn btn-primary">Главная</a>
+                <a href="#Привет в 404" onclick="window.history.go(-1); return false;" class="btn btn-primary">Назад</a>
+            </div>
+        </div>
+        <div class="error404_right">
+            <img rel="nofollow noopener" src="https://neko.su/assets/img/404.jpg" loading="lazy" decoding="async">
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer_left">
+        <div class="footer_logo">
+            <a href="https://discord.gg/touhouland"><b>TOUHOU</b><span>.LAND</span></a><span style="color: #7e8597;">© 2022 | v0.0.1</span>
+        </div>
+        <span>Мы не являемся аффилированным лицом компании <a href="https://discord.com">Discord Inc.</a></span>
+    </div>
+    <div class="footer_right">
+        <div class="footer_col">
+            <a class="ad" href="">По вопросам рекламы и сотрудничества<br></a>
+            <a class="license" href="license">Лицензионное соглашение</a>
+        </div>
+    </div>
+</footer>
+<div id="scroll" class="scroll" style="display: none;">
+    <img src="https://neko.su/assets/img/arrow.svg" title="Scroll To Top" alt="Scroll To Top" loading="lazy" decoding="async">
+</div>
+</body>
+<script src="../static/js/app.js"></script>
+</html>
